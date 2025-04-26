@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Калькулятор заработной платы</h1>
+      <label for="employeeType">Должность:</label>
+      <select id="employeeType">
+        <option value="manager">Менеджер</option>
+        <option value="developer">Разработчик</option>
+        <option value="designer">Дизайнер</option>
+      </select>
+      <label for="hoursWorker">Отработанные часы:</label>
+      <input type="number" id="hoursWorker" min="0" value="0" />
+      <button onclick="calculateSalary()">Рассчитать</button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
